@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Andrea's Calculator</title>
+<!-- Contains the CSS for the table and the background striping -->
+<link rel="stylesheet" type="text/css" href="calc.css">
+<!-- contains the css for the shooting star and the included pictures -->
+<link rel="stylesheet" type="text/css" href="star.css">
+<link href="https://fonts.googleapis.com/css?family=Orbitron|Permanent+Marker" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="calculatorScript.js"></script>
+
+<!-- Contains all the striping in the background and the overlaid spheres that travel -->
+<div id="background-container" >
+	<div class= "background-stripes" id = "pinkstripe">
+		<div class="overlay" id="first"></div>
+	</div>
+	<div class="background-stripes" id="mauvestripe">
+		<div class="overlay" id="second"></div>
+	</div>
+	<div class= "background-stripes" id = "redstripe">
+		<div class="overlay" id="third"></div>
+	</div>
+	<div class= "background-stripes" id = "orangestripe">
+		<div class="overlay" id="fourth"></div>
+	</div>
+	<div class= "background-stripes" id = "violetstripe">
+		<div class="overlay" id="fifth"></div>
+	</div>
+	
+	<div class= "background-stripes" id = "greenstripe">
+		<div class="overlay" id="sixth"></div>
+	</div>
+	<div class= "background-stripes" id = "bluestripe">
+		<div class="overlay" id="seventh"></div>
+	</div>
+	<div class= "background-stripes" id = "beigestripe">
+		<div class="overlay" id="eighth"></div>
+	</div>
+	<div class= "background-stripes" id = "yellowstripe">
+		<div class="overlay" id="ninth"></div>
+	</div>
+	<div class= "background-stripes" id = "cyanstripe">
+		<div class="overlay" id="tenth"></div>
+	</div>
+	
+</div>
+
+<!-- container div for table & photos. -->
+<div>
+
+<!-- empty div for steven universe photos -->
+<div id="logo"></div>
+
+<!-- star -->
+<div id = "star-glow">
+	<div class="star top-star">
+		<div class="star first-star"></div>
+		<div class="star second-star"></div>
+	</div>
+</div>
+
+<!-- the piece de resistance -->
+<table>
+		<tr>
+			<th colspan="4" id = "answers">0</th>
+		</tr>
+		<tr>
+			<td colspan="2" onclick="allClear()" id = "AC"><p>AC</p></td>
+			<td colspan="2" onclick="avg()" id = "AVG"><p>AVG</p></td>
+		</tr>
+		<tr>
+			<td onclick= "getNum(this.id)" id = "7"><p >7</p></td>
+			<td onclick= "getNum(this.id)" id = "8"><p>8</p></td>
+			<td onclick= "getNum(this.id)" id = "9"><p>9</p></td>
+			<td onclick= "getSym(this.id)" id = "*"><p>x</p></td>
+		</tr>
+		<tr>
+			<td onclick= "getNum(this.id)" id = "4"><p>4</p></td>
+			<td onclick= "getNum(this.id)" id = "5"><p>5</p></td>
+			<td onclick= "getNum(this.id)" id = "6"><p>6</p></td>
+			<td onclick= "getSym(this.id)" id = "-"><p>-</p></td>
+		</tr>
+		<tr>
+			<td onclick= "getNum(this.id)" id = "1"><p>1</p></td>
+			<td onclick= "getNum(this.id)" id = "2"><p>2</p></td>
+			<td onclick= "getNum(this.id)" id = "3"><p>3</p></td>
+			<td onclick= "getSym(this.id)" id = "+"><p>+</p></td>
+		</tr>
+
+		<tr>
+
+		<td onclick="getNum(this.id)" id="0"><p>0</p></td>
+		<td onclick="calculate()" id = "="><p>=</p></td>
+		<td onclick="getSym(this.id)" id = "."><p>.</p></td>
+
+		<td onclick="getSym(this.id)" id = "/"><p>/</p></td>
+		</tr>
+
+	</table>
+	
+<!-- more empty divs with photos -->
+	<div id="lion"></div>
+	<div id="steven-and-friends"></div>
+</div>	
+
+	
+	</body>
+</body>
+</html>

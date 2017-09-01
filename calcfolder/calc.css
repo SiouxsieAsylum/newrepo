@@ -1,0 +1,165 @@
+		body {
+			margin: 0;
+
+		}
+		.background-stripes{
+			height: 10vh;
+			width: 100%;
+			z-index: -2;
+		}
+
+
+		@keyframes dots {
+    0%   { left:0px; }
+    100% { left: 1500px; }
+}
+
+/*stripes begin here*/
+		#pinkstripe{
+			background-color: rgba(255, 117, 174, 0.6);
+			
+		}
+		#mauvestripe{
+			background-color: rgba(247, 113, 179, 0.6);
+
+		
+		}
+		#bluestripe{
+			background-color: rgba(106, 162, 252, 0.6);
+
+		}
+		#violetstripe{
+			background-color: rgba(250, 122, 255, 0.6);
+
+		}
+		#orangestripe{
+			background-color: rgba(255, 157, 66, 0.5);
+
+		}
+		#greenstripe{
+			background-color: rgba(101, 242, 104, 0.5);
+
+
+		}
+		#redstripe{
+			background-color: rgba(255, 81, 81, 0.5);
+
+		}
+		#beigestripe{
+			background-color: rgba(226, 199, 165, 0.5);
+
+		}
+		#yellowstripe{
+			background-color: rgba(250, 255, 109, 0.5);
+
+		}
+		#cyanstripe{
+			background-color: rgba(149, 246, 249, 0.5);
+
+		}
+/*overlays begin here*/
+		.overlay {
+			margin-left: -100px;
+			position:relative;
+			height:10vh;
+			border-radius: 300px;
+			width:10vh;
+			background: radial-gradient(rgba(255,255,255,1.0), rgba(255,255,255,0.0));
+			background: -webkit-radial-gradient(rgba(255,255,255,1.0), rgba(255,255,255,0.0));
+			animation: dots linear 30s infinite;
+		}
+
+		#first{
+			animation-duration: 25s;
+			animation-delay: 3s;	
+		}
+		#second{
+			animation-duration: 22s;
+			animation-delay: 6s;
+		}
+		#third{
+			animation-duration: 24s;
+			animation-delay: 1s;
+		}
+		#fourth{
+			animation-duration: 33s;
+			animation-delay: 2s;
+		}
+		#fifth{
+			animation-duration: 21s;
+			animation-delay: 8s;
+		}
+		#sixth{
+			animation-duration: 30s;
+			animation-delay: 4s;
+
+		}
+		#seventh{
+			animation-duration: 20s;
+			animation-delay: 3s;
+		}
+		
+		#eighth{
+			animation-duration: 31s;
+			animation-delay: 10s;
+		}
+		#ninth{
+			animation-duration: 25s;
+			animation-delay: 8s;
+		}
+		#tenth{
+			animation-duration: 30s;
+			animation-delay: 3s;
+		}
+
+/*calculator begins here*/
+
+		table {
+			width: 425px;
+			position: absolute;
+			left: 40vw;
+			top: 3em;
+			padding: 15px 15px 25px 15px;
+			border: 5px solid rgb(119, 0, 0);
+			border-radius: 50px;
+			background-color:rgb(244, 66, 66);
+			/*z-index: -1;*/
+		}
+
+		th {
+
+			font-family: 'Orbitron', sans-serif;
+			font-size: 50px;
+			margin: 0 15px 0 15px;
+			padding: 30px 15px 30px 15px;
+			border-radius: 30px 30px 0 0;
+			color: rgb(255,255,255);
+			text-overflow: wrap;
+
+		}
+
+		td {
+			font-family: 'Permanent Marker', cursive;
+			font-size: 40px;
+			line-height: 0px;
+			text-align:center;
+			padding: 0px 20px 0px 20px;
+			background-color: rgb(237, 80, 80);
+			border-top: 5px double rgb(249, 167, 167);
+			border-bottom: 5px solid rgb(109, 36, 36);
+			border-right: 5px solid rgb(109, 36, 36);
+		}
+
+		td:hover, td:focus{
+			background-color: rgb(96, 21, 21);
+		}
+
+		td:active{
+			background-color: rgb(255, 163, 163);
+		}
+
+		#answers {
+			background-color: rgb(22, 11, 11);
+			background: linear-gradient(bottom right, rgb(22, 11, 11) 60%, rgba(255, 229, 229, 0.8));
+			background: -webkit-linear-gradient(bottom right, rgb(22, 11, 11) 60%,rgba(255, 229, 229, 0.8));
+		}
